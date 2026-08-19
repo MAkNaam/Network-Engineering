@@ -1,5 +1,5 @@
 
-<img width="1005" height="469" alt="Image" src="https://github.com/user-attachments/assets/3e0d2a9e-8973-4444-948e-8b5c1ac48a4d" />
+<img width="951" height="456" alt="image" src="https://github.com/user-attachments/assets/f7d71ccb-c712-4530-a56a-66c9a697a2d6" />
 
 รายงานสรุปการตั้งค่าระบบเครือข่าย Inter-VLAN Routing (Router-on-a-Stick)
 1. วัตถุประสงค์
@@ -14,7 +14,7 @@ End Devices (PC): จำนวน 4 เครื่อง (แบ่งเป็
 
 3. การแบ่ง VLAN และหมายเลข IP (IP Addressing Scheme)
 
-<img width="1186" height="138" alt="Image" src="https://github.com/user-attachments/assets/7f3619e0-1802-4615-9f83-dd87d46b4ea7" />
+<img width="1189" height="140" alt="image" src="https://github.com/user-attachments/assets/cf3d06cc-3fb9-4b8f-8807-e59d3435c936" />
 
 4. ขั้นตอนการตั้งค่าและคำสั่ง (Configuration)
 ส่วนที่ 1: การตั้งค่าบน Switch0
