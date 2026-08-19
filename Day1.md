@@ -19,7 +19,7 @@ End Devices (PC): จำนวน 4 เครื่อง (แบ่งเป็
 4. ขั้นตอนการตั้งค่าและคำสั่ง (Configuration)
 ส่วนที่ 1: การตั้งค่าบน Switch0
 สร้าง VLAN, กำหนดพอร์ตให้กับแต่ละ VLAN (Access Mode) และเปิดพอร์ตเชื่อมต่อกับ Router ให้เป็นโหมด Trunk
-
+```
 Switch>en
 Switch#conf t
 ! สร้างและตั้งชื่อ VLAN
@@ -41,10 +41,10 @@ Switch(config-if-range)#exit
 Switch(config)#int gig0/1
 Switch(config-if)#switchport mode trunk
 Switch(config-if)#exit
-
+```
 ส่วนที่ 2: การตั้งค่าบน Router0
 เปิดใช้งานพอร์ตหลัก และสร้าง Sub-interface เพื่อทำหน้าที่เป็น Default Gateway ให้แต่ละ VLAN
-
+```
 Router>en
 Router#conf t
 ! เปิดการทำงานของพอร์ตหลัก
@@ -61,7 +61,7 @@ Router(config)#int gig0/0.20
 Router(config-subif)#encapsulation dot1q 20
 Router(config-subif)#ip address 192.168.20.1 255.255.255.0
 Router(config-subif)#exit
-
+```
 ส่วนที่ 3: การตั้งค่า End Devices (PC)
 เข้าไปที่เมนู Desktop > IP Configuration เพื่อตั้งค่า Static IP
 
