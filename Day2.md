@@ -7,6 +7,7 @@
 เชื่อมต่อกันผ่าน Switch สิ่งที่เราต้องการคือ ไม่อยากไปนั่งตั้งค่า IP Address ให้คอมพิวเตอร์ทีละเครื่อง แต่จะให้ Server ทำหน้าที่แจก IP ให้อัตโนมัติ และทำหน้าที่จำชื่อเว็บไซต์จำลองในระบบ
 
 <img width="871" height="301" alt="image" src="https://github.com/user-attachments/assets/6a7b6c87-c9dc-4665-a145-24f91bfd7d8e" />
+
 ขั้นตอนที่ 1: การตั้งค่า IP Address ให้ Server 
 ก่อนที่ Server จะไปให้บริการเครื่องอื่นได้ ตัวมันเองต้องมีที่อยู่ (IP) ที่แน่นอนก่อน
 
@@ -23,6 +24,7 @@ Default Gateway (192.168.10.1): ชี้ทางออกไปยัง Route
 (ข้อสังเกต) DNS Server (192.68.10.10): ตรงนี้อาจจะพิมพ์ตกตัวเลข 1 ไปครับ ความจริงควรจะเป็น 192.168.10.10 (ชี้กลับมาที่ตัวเอง เพราะ Server ตัวนี้ทำหน้าที่เป็น DNS ด้วย)
 
 <img width="873" height="407" alt="image" src="https://github.com/user-attachments/assets/f37d2a9f-73e0-4eb0-a3d8-9656fed2c6d3" />
+
 ขั้นตอนที่ 2: การตั้งค่าบริการ DNS 
 DNS (Domain Name System) คือสมุดโทรศัพท์ของเครือข่าย ทำหน้าที่แปลงชื่อที่คนจำง่าย (เช่น netlab.local) ให้เป็นตัวเลข IP Address ที่คอมพิวเตอร์เข้าใจ
 
@@ -37,6 +39,7 @@ Address: 192.168.10.10 (IP ของ Server)
 (ข้อควรระวัง!) ในภาพของคุณ DNS Service ถูกติ๊กอยู่ที่คำว่า "Off" อย่าลืมเปลี่ยนเป็น "On" ด้วยนะครับ ไม่อย่างนั้นระบบแปลงชื่อจะไม่ทำงาน
 
 <img width="870" height="533" alt="image" src="https://github.com/user-attachments/assets/fe1bcb3c-db79-4d6a-ab4d-7068d19ee05c" />
+
 ขั้นตอนที่ 3: การตั้งค่าบริการ DHCP
 DHCP (Dynamic Host Configuration Protocol) คือบริการแจก IP Address อัตโนมัติให้กับอุปกรณ์ใดๆ ก็ตามที่เสียบสายแลนเข้ามาในเครือข่าย
 
@@ -55,6 +58,7 @@ Start IP Address: 192.168.10.100 (กำหนดว่าให้เริ่�
 Maximum Number of Users: 156 (แจกได้สูงสุด 156 เครื่อง)
 
 <img width="869" height="334" alt="image" src="https://github.com/user-attachments/assets/94dac977-690d-45d1-8a28-78fd65973e3b" />
+
 ขั้นตอนที่ 4: การตั้งค่าเครื่อง PC เพื่อรับ IP (จากภาพ image_b6bd1c.png)
 เมื่อ Server พร้อมแล้ว เราก็มาบอกให้เครื่องลูกข่ายไปขอ IP จาก Server
 
